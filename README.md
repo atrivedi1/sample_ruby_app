@@ -13,7 +13,7 @@ is available jointly under the MIT License and the Beerware License. See
 
 ## Getting started
 
-To get started with the app, clone the repo and then install the needed gems:
+To get started with the app, clone the repo and then install the following gems:
 
 ```
 $ bundle install --without production
@@ -38,4 +38,4 @@ $ rails server
 ```
 
 For more information, see the
-[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book)!
