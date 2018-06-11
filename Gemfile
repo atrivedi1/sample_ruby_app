@@ -25,6 +25,9 @@ gem 'jbuilder', '2.7.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '4.3.1'
+gem 'rails-ujs'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
