@@ -18,6 +18,11 @@ class ActiveSupport::TestCase
   def log_in_as(user)
     session[:user_id] = user.id
   end
+
+  # Logs out the current user.
+  def log_out_as(user)
+    session.delete(:user_id)
+  end
 end
 
 class ActionDispatch::IntegrationTest
