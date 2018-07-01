@@ -16,6 +16,13 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should redirect user page when not activated" do
+    @other_user.update_attribute(:activated, false)
+    get user_path(@other_user)
+    assert_redirected_to root_url
+    @other_user.update_attribute(:activated, true)
+  end
+
   test "should redirect edit when not logged in" do
     get edit_user_path(@user)
     assert_not flash.empty?
