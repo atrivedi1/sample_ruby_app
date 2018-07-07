@@ -21,6 +21,7 @@ class MicropostsController < ApplicationController
 
   private
 
+    #picture not relevant atm
     def micropost_params
       params.require(:micropost).permit(:content, :picture)
     end

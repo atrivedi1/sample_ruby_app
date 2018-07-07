@@ -7,7 +7,7 @@ ruby '2.5.1'
 gem 'rails', '5.2.0'
 gem 'bcrypt', '3.1.12'
 gem 'faker', '1.7.3'
-gem 'carrierwave', '1.2.2'
+# gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'mini_magick', '4.7.0'
 gem 'i18n', '0.7.0'
 gem 'will_paginate',           '3.1.6'
@@ -70,7 +70,7 @@ end
 
 group :production do
   gem 'pg', '0.18.4'
-  gem 'fog', '1.42'
+  # gem 'fog', require: 'fog/aws'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
