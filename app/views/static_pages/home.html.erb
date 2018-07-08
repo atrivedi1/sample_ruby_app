@@ -1,5 +1,5 @@
 <% if logged_in? %>
-    <%= render 'microposts/micropost_content' %>
+    <%= render 'static_pages/logged_in_homepage' %>
 <% else %>
-    <%= render 'layouts/logged_out_homepage' %>
+    <%= render 'static_pages/logged_out_homepage' %>
 <% end %>
